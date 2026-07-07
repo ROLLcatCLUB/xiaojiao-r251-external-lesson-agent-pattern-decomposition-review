@@ -1,0 +1,82 @@
+{
+  "stage_id": "1013R_R251_EXTERNAL_LESSON_AGENT_PATTERN_DECOMPOSITION",
+  "status": "PASS",
+  "validated_at": "2026-07-08T05:39:31+08:00",
+  "checks": [
+    {
+      "check": "each_project_at_least_three_pattern_cards",
+      "status": "PASS",
+      "details": {
+        "Claw-ED": 4,
+        "saniales/ai-lesson-planner": 4,
+        "classmin": 5,
+        "DivanshiJain2005/AI-lesson-planner": 3
+      }
+    },
+    {
+      "check": "all_cards_have_xiaobei_mapping",
+      "status": "PASS",
+      "count": 16
+    },
+    {
+      "check": "all_cards_have_adopt_as_and_no_direct_code_adoption",
+      "status": "PASS",
+      "allowed_values": [
+        "contract_only",
+        "naming_reference",
+        "future_design"
+      ]
+    },
+    {
+      "check": "saniales_gpl_no_copy_boundary",
+      "status": "PASS",
+      "details": "All saniales cards prohibit copying GPL-3.0 code, agent files, prompts, scripts, templates, or directory structure."
+    },
+    {
+      "check": "classmin_heavy_stack_no_adoption",
+      "status": "PASS",
+      "details": "classmin cards explicitly forbid connecting CrewAI, AutoGen, ChromaDB, Ollama, Streamlit, or simulation runtime."
+    },
+    {
+      "check": "divanshi_provider_ui_not_adopted",
+      "status": "PASS",
+      "details": "Divanshi cards explicitly forbid Streamlit UI, direct provider calls, raw key handling, old OpenAI SDK dependency, and app.py shape."
+    },
+    {
+      "check": "claw_ed_no_early_r95",
+      "status": "PASS",
+      "details": "Claw-ED cards map to future R95 only after R201/R220, R201M review, R230, and R252 preconditions."
+    },
+    {
+      "check": "no_main_project_code_modified",
+      "status": "PASS",
+      "details": "R251 only adds documents and JSON under outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R251_EXTERNAL_LESSON_AGENT_PATTERN_DECOMPOSITION."
+    },
+    {
+      "check": "no_dependency_install",
+      "status": "PASS"
+    },
+    {
+      "check": "no_model_or_provider_call",
+      "status": "PASS"
+    },
+    {
+      "check": "no_database_feishu_memory_formal_export",
+      "status": "PASS"
+    }
+  ],
+  "created_files": [
+    "README.md",
+    "r251_pattern_card_index.md",
+    "r251_pattern_cards.json",
+    "r251_claw_ed_bundle_patterns.md",
+    "r251_saniales_workflow_patterns.md",
+    "r251_classmin_timeline_xiaojiao_patterns.md",
+    "r251_divanshi_free_prep_input_patterns.md",
+    "r251_xiaobei_mapping_matrix.md",
+    "r251_non_adoption_and_license_guard.md",
+    "r251_next_stage_recommendation.md",
+    "validate_1013R_R251_external_lesson_agent_pattern_decomposition_result.json"
+  ]
+}
+
